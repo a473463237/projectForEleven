@@ -1,0 +1,364 @@
+.page-detail {
+    padding-top: 10px;
+    font-size: 14px;
+    color: #666666;
+    a {
+        text-decoration: none;
+    }
+    .m-crumbs {
+        margin: 10px 0;
+        .el-breadcrumb {
+            font-size: 12px;
+        }
+    }
+    // 卡片部分
+    .m-sum-card {
+        display: flex;
+        justify-content: space-between;
+        background: #FFF;
+        box-shadow: 0 5px 14px 0 rgba(0, 0, 0, .1);
+        border-radius: 10px;
+        padding: 20px;
+        dl {
+            margin-right: 20px;
+            width: 100%; // 正常来说摇计算一下宽度的 calc  这里因为使用的flex布局，所以自适应了
+        }
+        dt {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex: 1;
+            padding-bottom: 10px;
+            h1 {
+                font-size: 26px;
+                font-weight: 500;
+                color: #222;
+            }
+            >p {
+                .el-rate {
+                    display: inline-block;
+                    .el-rate__icon {
+                        font-size: 16px;
+                    }
+                }
+                span {
+                    font-size: 14px;
+                }
+            }
+            .icon {
+                background-image: url(https://s1.meituan.net/bs/fe-web-meituan/9383476/img/sprites/24pt.png);
+                background-repeat: no-repeat;
+                background-size: 130px;
+                width: 20px;
+                height: 20px;
+                display: inline-block;
+                position: relative;
+                top: 4px;
+                left: -1px;
+            }
+            .icon-wechat {
+                background-position: 100%;
+            }
+            >ul {
+                border-top: 1px solid #E5E5E5;
+                list-style: none;
+                padding-top: 5px;
+                margin-top: 10px;
+                li {
+                    font-size: 14px;
+                    color: #666;
+                    padding: 7px 0;
+                }
+            }
+        }
+        dd {
+            padding: 10px 0;
+            border-top: 1px solid #E5E5E5;
+            .seller-info-body {
+                padding: 10px 0;
+                .item {
+                    font-size: 14px;
+                    color: #666;
+                    padding: 7px 0;
+                    span {
+                        line-height: 20px;
+                    }
+                    a {
+                        color: #666;
+                        text-decoration: none;
+                    }
+                    a:hover {
+                        color: #FE8C00;
+                    }
+                }
+            }
+            .support {
+                .service {
+                    float: left;
+                    text-align: center;
+                    margin: 18px 15px 0px 15px;
+                    .icon {
+                        background-image: url(https://s1.meituan.net/bs/fe-web-meituan/9383476/img/sprites/32pt.png);
+                        height: 30px;
+                        width: 30px;
+                        display: inline-block;
+                        background-repeat: no-repeat;
+                        background-size: 180px;
+                        margin-left: -22px;
+                        &.icon-wifi {
+                            background-position: 98%;
+                        }
+                        &.icon-park {
+                            background-position: 74%;
+                        }
+                        span {
+                            font-size: 12px;
+                            color: #666;
+                        }
+                    }
+                }
+            }
+        }
+        .banner {
+            width: 384px;
+            height: 214px;
+        }
+    }
+    // 左侧部分
+    .left {
+        padding-top: 40px;
+        .buy {
+            width: 120px;
+            height: 40px;
+            font-size: 14px;
+            background-color: #f90;
+            text-align: center;
+            line-height: 40px;
+            color: #fff;
+        }
+        .fr {
+            float: right;
+            display: block;
+            margin-top: 30px;
+            border-radius: 100px;
+        }
+        // 商家团购以及优惠
+        .m-detail-item {
+            >h3 {
+                font-size: 20px;
+                line-height: 26px;
+                margin-bottom: 8px;
+                color: #222;
+            }
+            .group {
+                margin-bottom: 40px;
+                background: #fff;
+                border: 1px solid #e5e5e5;
+                border-radius: 4px;
+                padding: 16px 20px 20px;
+                .one {
+                    padding-bottom: 20px;
+                    margin-top: 17px;
+                    overflow: hidden;
+                    .pic {
+                        width: 100px;
+                        height: 100px;
+                        float: left;
+                        cursor: pointer;
+                        .imgbox {
+                            display: block;
+                            width: auto;
+                            height: auto;
+                            background: url(https://s0.meituan.net/bs/file/?f=meis/meishi.web:assets/bee61f5f04046d07.png@53635fc) center center no-repeat #e0e0e0;
+                            background-size: 60% auto;
+                        }
+                        img {
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 4px;
+                        }
+                    }
+                    .info {
+                        float: left;
+                        padding: 1px 0 0 20px;
+                        width: 776px;
+                        .name {
+                            font-size: 16px;
+                            line-height: 22px;
+                            cursor: pointer;
+                            span {
+                                vertical-align: middle;
+                            }
+                            .icon {
+                                vertical-align: middle;
+                                font-size: 12px;
+                                color: #fff;
+                                height: 16px;
+                                width: 16px;
+                                display: inline-block;
+                                margin-left: 14px;
+                            }
+                        }
+                        .sale {
+                            font-size: 12px;
+                            color: #666;
+                            line-height: 17px;
+                            margin: 1px 0 22px;
+                            cursor: pointer;
+                        }
+                        .price {
+                            font-size: 30px;
+                            color: #f60;
+                            cursor: pointer;
+                            b {
+                                font-weight: 400;
+                                font-size: 14px;
+                            }
+                            span {
+                                color: #999;
+                                font-size: 12px;
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+                }
+                .line {
+                    height: 1px;
+                    overflow: hidden;
+                    border-bottom: 1px solid #e5e5e5;
+                }
+            }
+        }
+        .vouchers {
+            //margin-top: 10px;
+            margin-bottom: 40px;
+            background: #fff;
+            border: 1px solid #e5e5e5;
+            border-radius: 4px;
+            padding: 20px;
+            >h4 {
+                font-size: 16px;
+                line-height: 26px;
+            }
+            .one {
+                padding-bottom: 20px;
+                margin-top: 17px;
+                overflow: hidden;
+                .price {
+                    float: left;
+                    width: 140px;
+                    height: 89px;
+                    background-image: url(https://s0.meituan.net/bs/file/?f=meis/meishi.web:assets/74f33f3125908576.png@53635fc);
+                    background-size: 100% 100%;
+                    text-align: center;
+                    padding: 11px 10px 0;
+                    color: #333;
+                    font-size: 14px;
+                    span {
+                        display: block;
+                        font-size: 30px;
+                        color: #f60;
+                        border-bottom: 1px dashed #ccc;
+                        line-height: 36px;
+                        margin-bottom: 9px;
+                        padding-bottom: 8px;
+                        b {
+                            font-weight: 400;
+                            font-size: 14px;
+                        }
+                    }
+                }
+                .name {
+                    float: left;
+                    width: 716px;
+                    padding-left: 20px;
+                    font-size: 12px;
+                    p {
+                        font-size: 16px;
+                        line-height: 22px;
+                        margin-bottom: 1px;
+                        color: #222;
+                    }
+                }
+            }
+        }
+        // 评论
+    }
+    // 右侧
+    .right {
+        padding-top: 74px;
+        // 右侧地图
+        .m-products-map {
+            margin-left: 18px;
+            img {
+                width: 230px;
+                height: 222px;
+                cursor: pointer;
+            }
+        }
+        .m-products-fav {
+            margin-top: 10px;
+            background-color: #fff;
+            border: 1px solid #E5E5E5;
+            border-radius: 4px;
+            padding: 16px 20px 0;
+            width: 230px;
+            box-sizing: border-box;
+            margin-left: 18px;
+            >h4 {
+                font-size: 16px;
+                color: #333333;
+                line-height: 22px;
+                font-weight: 500;
+            }
+            >ul.fav-list {
+                list-style: none;
+                padding-bottom: 18px;
+                >li {
+                    margin-top: 20px;
+                    img {
+                        width: 100%;
+                        border-radius: 4px;
+                    }
+                    h4 {
+                        font-size: 14px;
+                        color: #222222;
+                        line-height: 20px;
+                        width: 100%;
+                        margin: 0;
+                        font-weight: 500;
+                    }
+                    p {
+                        &.store {
+                            display: flex;
+                        }
+                        .el-rate {
+                            margin-right: 10px;
+                            .el-rate__icon {
+                                font-size: 14px;
+                            }
+                        }
+                        >span {
+                            font-size: 12px;
+                            color: #999;
+                            height: 24px;
+                            line-height: 24px;
+                        }
+                        &.price {
+                            color: #FF6600;
+                            font-size: 14px;
+                            font-weight: 700;
+                            em {
+                                font-size: 22px;
+                                font-style: normal;
+                                font-weight: 400;
+                                margin-right: 2px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
