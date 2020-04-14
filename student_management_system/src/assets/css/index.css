@@ -82,7 +82,7 @@ body,
 }
 
 .right-content .content {
-    display: none;
+    /* display: none; */
 }
 
 .right-content .content.content-active {
@@ -181,7 +181,6 @@ table tr td .btn.del:hover {
     left: 0;
     right: 0;
     z-index: 1;
-    display: none;
 }
 
 .dialog.show {
@@ -214,4 +213,61 @@ table tr td .btn.del:hover {
 .dialog .dialog-content h2 {
     font-size: 16px;
     color: #726b6b;
+}
+
+
+.dialog-content form label,  .dialog-content  form input {
+    font-size: 16px;
+}
+.dialog-content form div {
+    margin: 10px 0;
+}
+
+.dialog-content form label {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.dialog-content form label.radio-label {
+    width: 20px;
+}
+
+.dialog-content form .btn {
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 10px;
+}
+/* 搜索样式 */
+
+.search {
+    position: relative;
+    padding: 5px 20px;
+    overflow: hidden;
+}
+
+.search label {
+    height: 30px;
+    line-height: 30px;
+    text-indent: 12px;
+    width: 100px;
+}
+
+.search #search-input {
+    height: 30px;
+    line-height: 30px;
+    width: 300px;
+    box-sizing: border-box;
+}
+
+.search #search-submit {
+    height: 30px;
+    width: 50px;
+    line-height: 30px;
+    border: none;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
 }
